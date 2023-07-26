@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans';
+}
+body {
+    background: #6c008d;
+}
+.app {
+    background-color: aliceblue;
+    width: 80%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 20px;
+}
