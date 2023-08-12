@@ -58,7 +58,13 @@ body {
     cursor: pointer;
     display: none;
 }
-/* .correct
-/* .incorrect { 
-    background:  #7f01a5;
+/* .correct {
+    background: #59e20a;
+}
+.incorrect { 
+    background:  #ee0909;
+} 
+.selectedBtn {
+    background: #8a499e;
 } */
+
