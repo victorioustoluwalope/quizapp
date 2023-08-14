@@ -9,9 +9,9 @@ body {
 }
 .header-style {
     display: flex;
+    justify-content: space-between;
 }
 .header-style button {
-    margin-left: 50%;
     border-radius: 50%;
     height: 30px;
     width: 30px;
