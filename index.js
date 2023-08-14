@@ -131,3 +131,8 @@ nextButton.addEventListener("click", () =>{
 });
 
 startQuiz();
+
+function darkMode() {
+    let element = document.body;
+    element.classList.toggle("darkmode");
+}

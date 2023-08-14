@@ -7,6 +7,19 @@
 body {
     background: #6c008d;
 }
+.header-style {
+    display: flex;
+}
+.header-style button {
+    margin-left: 50%;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+.darkmode {
+    background: black;
+    color: white;
+}
 .app {
     background-color: aliceblue;
     width: 80%;
