@@ -1,3 +1,4 @@
+
 const questions = [
     {
         question: "What is my first name?", 
@@ -45,6 +46,25 @@ const questions = [
         ]
     }
 ];
+
+const body = document.body;
+const darkMode = document.getElementById("toggleButton");
+
+let isDarkMode = false;
+
+toggleButton.addEventListener('click', () => {
+    if (isDarkMode) {
+        body.style.backgroundColor = 'white';
+        toggleButton.classList.remove('white-btn');
+        toggleButton.classList.add('black-btn');
+        isDarkMode = false;
+    } else {
+        body.style.backgroundColor = 'black';
+        toggleButton.classList.remove('black-btn');
+        toggleButton.classList.add('white-btn');
+        isDarkMode = true;
+    }
+});
 
 const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer-buttons");
@@ -132,7 +152,7 @@ nextButton.addEventListener("click", () =>{
 
 startQuiz();
 
-function darkMode() {
-    let element = document.body;
-    element.classList.toggle("darkmode");
-}
+darkMode.addEventListener('click', () => {
+    // document.body.classList.toggle('dark-mode', darkMode.checked);
+    body.style.backgroundColor = darkMode.check ? "black" : "white";
+});
