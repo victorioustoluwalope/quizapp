@@ -5,7 +5,7 @@ const questions = [
         answers: [
             { text: "Chisom", correct: false},
             { text: "Toluwalope", correct: true},
-            { text: "Boluwatife", correct: false},
+            { text: "Hadiza", correct: false},
             { text: "Victoria", correct: false},
         ]
     },
