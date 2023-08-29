@@ -47,25 +47,6 @@ const questions = [
     }
 ];
 
-const body = document.body;
-const darkMode = document.getElementById("toggleButton");
-
-let isDarkMode = false;
-
-toggleButton.addEventListener('click', () => {
-    if (isDarkMode) {
-        body.style.backgroundColor = 'white';
-        toggleButton.classList.remove('white-btn');
-        toggleButton.classList.add('black-btn');
-        isDarkMode = false;
-    } else {
-        body.style.backgroundColor = 'black';
-        toggleButton.classList.remove('black-btn');
-        toggleButton.classList.add('white-btn');
-        isDarkMode = true;
-    }
-});
-
 const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
@@ -151,8 +132,3 @@ nextButton.addEventListener("click", () =>{
 });
 
 startQuiz();
-
-darkMode.addEventListener('click', () => {
-    // document.body.classList.toggle('dark-mode', darkMode.checked);
-    body.style.backgroundColor = darkMode.check ? "black" : "white";
-});
